@@ -7,7 +7,5 @@ class Book < ApplicationRecord
 
     def self.buku_mahal
         where('price > 300000')
-    end
-    
-    
+    end 
 end
