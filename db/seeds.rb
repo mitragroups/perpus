@@ -14,8 +14,8 @@ Book.create(title: 'Flutter', page: 210, price: 210_000, description: 'Mobile Hy
 =end
 
 #=begin
-Author.create(name: 'Miftah MD', age: 35, address: Jakarta, gender: 'Male')
+Author.create(name: 'Miftah MD', age: 35, address: 'Jakarta', gender: 'Male')
 Author.create(name: 'Mafaaza', age: 5, address: 'Tebing Tinggi', gender: 'Female')
-Author.create(name: "Mu'ammar", age: 8, address: 'Jakarta', gender: 'Male')
+Author.create(name: "Mu'ammar", age: 8, address: 'Medan', gender: 'Male')
 Author.create(name: 'Mahreen', age: 3, address: 'Bogor', gender: 'Female')
 #=end
