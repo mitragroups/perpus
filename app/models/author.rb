@@ -8,4 +8,8 @@ class Author < ApplicationRecord
     def self.author_female 
         where("gender = 'Female'").pluck(:name)
     end
+
+    def self.oldest
+        order(age: :desc)
+    end
 end
