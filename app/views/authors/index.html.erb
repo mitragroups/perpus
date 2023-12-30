@@ -1,2 +1,7 @@
 <h1>Authors#index</h1>
 <p>Find me in app/views/authors/index.html.erb</p>
+
+<% @penulis.each do |penulis|%>
+<%= penulis.name%>
+<br>
+<%end%>

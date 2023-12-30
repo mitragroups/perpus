@@ -1,5 +1,6 @@
 class AuthorsController < ApplicationController
   def index
+    @penulis = Author.all
   end
 
   def tertua 
