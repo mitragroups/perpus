@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'authors/index'
   get 'authors/tertua'
+  root "authors#index"
 
 
 
