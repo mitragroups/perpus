@@ -8,4 +8,8 @@ class Book < ApplicationRecord
     def self.buku_mahal
         where('price > 300000')
     end 
+
+    def self.thick_page 
+        order(page: :desc).pluck(:title, :price, :page)
+    end
 end
