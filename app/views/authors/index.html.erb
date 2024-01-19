@@ -1,7 +1,16 @@
-<h1>Authors#index</h1>
-<p>Find me in app/views/authors/index.html.erb</p>
-
-<% @penulis.each do |penulis|%>
-<%= penulis.name%>
-<br>
-<%end%>
+<table>
+    <tr>
+        <td>Nama </td>
+        <td>Umur </td>
+        <td>Jenis Kelamin </td>
+        <td>Alamat </td>
+    <tr>
+    <% @penulis.each do |b| %>
+    <tr>
+        <td><%= b.name %></td>
+        <td><%= b.age %></td>
+        <td><%= b.gender %></td>
+        <td><%= b.address %></td>
+    <tr>
+    <% end %>
+</table>
