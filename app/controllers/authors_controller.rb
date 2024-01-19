@@ -6,7 +6,10 @@ class AuthorsController < ApplicationController
   def show
     id = params[:id]
     @author = Author.find(id)
-    render plain: @author
+    render json: {
+      values: @author, 
+      message: 'Success'
+    }, status: 200
   end
   
 
