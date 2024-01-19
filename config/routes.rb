@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'authors/index'
   get 'authors/tertua'
-  root "authors#index"
-
+  #root "authors#index"
+  resources :authors
 
 
   get 'books/index'

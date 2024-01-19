@@ -3,6 +3,13 @@ class AuthorsController < ApplicationController
     @penulis = Author.all
   end
 
+  def show
+    id = params[:id]
+    @author = Author.find(id)
+    render plain: @author
+  end
+  
+
   def tertua 
     @tertua = Author.oldest
     render json: {
