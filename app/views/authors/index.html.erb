@@ -4,6 +4,7 @@
         <td>Umur </td>
         <td>Jenis Kelamin </td>
         <td>Alamat </td>
+        <td>Action </td>
     <tr>
     <% @penulis.each do |b| %>
     <tr>
@@ -11,6 +12,7 @@
         <td><%= b.age %></td>
         <td><%= b.gender %></td>
         <td><%= b.address %></td>
+        <td><%= link_to 'Show', author_path(b) %>
     <tr>
     <% end %>
 </table>
