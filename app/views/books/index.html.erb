@@ -1,2 +1,18 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<table>
+    <tr>
+       <td>Nomor </td>
+       <td>Judul </td>
+       <td>Halaman </td>
+       <td>Harga </td>
+       <td>Deskripsi </td>
+    </tr>
+    <% @books.each do |buku| %>
+    <tr>
+        <td><%= buku.id %></td>
+        <td><%= buku.title %></td>
+        <td><%= buku.page %></td>
+        <td><%= buku.price %></td>
+        <td><%= buku.description %></td>
+    </tr>
+    <% end %>
+</table>
